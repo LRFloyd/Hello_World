@@ -38,7 +38,31 @@ namespace HelloWorld
             string messageThree = "LaVelle";
             string messageFour = " ";
 
-           
+            ////Part two set initial Developer attributes
+            int ageOne = 34;
+            int ageTwo = 45;
+            int ageThree = 80;
+            double heightOne = 72.50;
+            double heightTwo = 91.45;
+            float weightOne = 210.028461f;
+            float weightTwo = 331.123457f;
+            bool isHumanLikeOne = true;
+            bool isHumanLikeTwo = false;
+            char genderMale = 'M';
+            char genderFemale = 'F';
+
+            ////Part three displays variable values
+            Console.WriteLine(messageOne);//displays intial greeting to console
+            Console.WriteLine(messageTwo);
+
+            ////Part four mathematical operator, bool and char examples
+            Console.WriteLine(ageOne + ageTwo);//Addition example
+            Console.WriteLine(heightOne - heightTwo);//Subtraction example
+            Console.WriteLine(weightOne * weightTwo);//Multiplication example
+            Console.WriteLine(isHumanLikeOne);//Bool example
+            Console.WriteLine(genderMale);//Char example
+
+         
 
         
     }
