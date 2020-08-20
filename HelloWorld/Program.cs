@@ -25,17 +25,21 @@ namespace HelloWorld
              */
 
             //INTRO
-            
-            Console.WriteLine("Hello World");
 
-            string[] arg = {"LaVelle", " is", " a", " Developer"};
+            string[] arg = { "LaVelle", " is", " a", " Developer" };
             for (int i = 0; i < arg.Length; i++)
             {
-                Console.Write(arg[i], "\n");
+                Console.Write(arg[i],"\n");
             }
 
-        }
+            ////Part one greeting statement
+            string messageOne = "Hello World!";
+            string messageTwo = "I'm a Developer";
+            string messageThree = "LaVelle";
+            string messageFour = " ";
 
+           
 
+        
     }
 }
