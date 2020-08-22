@@ -120,7 +120,64 @@ namespace HelloWorld
             //Console.WriteLine("What is the distance to Nuceria?");
             //city3Distance = int.Parse(Console.ReadLine());
 
+            //if ((city1Distance <= 125) &&((city1Distance < city2Distance) && (city1Distance < city3Distance)))
+            //{
+            //    Console.WriteLine("We will march to {0}", city1);
+            //}
+            //if ((city2Distance <= 125)&&((city2Distance < city1Distance)&&(city2Distance < city3Distance)))
+            //{
+            //    Console.WriteLine("We will march to " + city2);
+            //}
+            //if ((city3Distance <= 125)&&((city3Distance < city2Distance)&&(city3Distance < city1Distance)))
+            //{
+            //    Console.WriteLine("We will march to {0}", city3);
+            //}
 
+            //Console.WriteLine("What is your rank soldier?");
+            //string rank = Console.ReadLine().ToLower();
+
+            //Console.WriteLine("What is your age soldier");
+            //int age = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("What is your job soldier");
+            //string job = Console.ReadLine().ToLower();
+
+            //if ((rank == "officer")||(age <=26))
+            //{
+            //    Console.WriteLine("Get your gear, kiss your family goodbye, put on your marching boots.");
+            //}
+            //else if ((job == "cook")&&(age >= 26))
+            //{
+            //    Console.WriteLine("My army has to eat. Pack you pots and pans.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Sorry, your staying home.");
+            //}
+
+            //switch (job)
+            //{
+            //    case "infantry":
+            //        Console.WriteLine("You will carry a sword.");
+            //        break;
+
+            //    case "archer":
+            //        Console.WriteLine("You will carry a bow and arrow.");
+            //        break;
+
+            //    case "supply":
+            //        Console.WriteLine("You will carry pots and pans.");
+            //        break;
+
+            //    case "specialist":
+            //        Console.WriteLine("You will operate the catapult.");
+            //        break;
+
+            //    default:
+            //        Console.WriteLine("You will ride horseback.");
+            //        break;
+
+            
 
         
     }
