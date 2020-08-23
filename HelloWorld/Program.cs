@@ -177,7 +177,92 @@ namespace HelloWorld
             //        Console.WriteLine("You will ride horseback.");
             //        break;
 
-            
+            //Part 12 array examples
+            //string[] foodList = new string[6];
+            //foodList[0] = "Milk";
+            //foodList[1] = "Fruit";
+            //foodList[2] = "Meat";
+            //foodList[3] = "Wine";
+            //foodList[4] = "Bread";
+            //foodList[5] = "Water";
+            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+
+            int[] foodAmount = new int[] { 1000, 1000, 2000, 10000, 15000 };
+            //Console.WriteLine(foodAmount[0] + ", " + foodAmount[1] + ", " + foodAmount[2] + ", " + foodAmount[3] + ", " + foodAmount[4]);
+
+            //string[] elements = messageTwo.Split(' ');
+            //Console.Write(elements[0]);
+            //Console.Write(elements[1]);
+            //Console.WriteLine(elements[2]);
+            //Console.WriteLine(elements.Length);
+
+            //string myName = "Vell";
+            //char[] letters = myName.ToCharArray();
+            //Console.WriteLine("{0}"+"{1}"+"{2}"+"{3}", letters[0], letters[1], letters[2], letters[3]);
+            //Console.Write(letters[0]);
+            //Console.Write(letters[1]);
+            //Console.Write(letters[2]);
+            //Console.WriteLine(letters[3]);
+
+            //}
+
+            isHumanLikeOne = IsHumanLike(ageOne);
+            Console.WriteLine("To say our male is Human like is " + isHumanLikeOne);
+            /* 1) the bool variable 'isHumanLikeOne' is assigned the return value of 'IsHumanLike' method call
+             * 2) the value of the int variable 'ageOne' is passed to the method call 'IsHumanLike'.
+             * 3) when the complier executes the new assigned bool 'isHumanLikeOne' it executes the 'IsHumanLike' method call 
+             * 4) the complier exits the main method and executes 'IsHumanLike' method
+             * 5) the value of the int variable 'ageOne' is passed to 'IsHumanLike' method parameter 'age'
+             * 6) the value of 'age' is passed to the conditional statement
+             * 7) after being processed the return value 'status' is passed back to 'IsHumanLike' 
+             * and the value of the method call is assigned to the variable 'isHumanLikeOne'
+             * which the Console.WriteLine() method prints the value of it.
+             * 
+             * 
+             */
+
+            Console.WriteLine(Reverse(messageTwo));
+            /* 
+             * 1) the complier executes the 'Console.WriteLine()' method call leaveing the main method and executes the 'Reverse' method call
+             * 2) 
+            */
+
+            Console.WriteLine("The total sum of the foodAmount array is {0}", SumArray(foodAmount));
+        }
+        static int SumArray(int[] num)
+        {
+            int sum = 0;
+            for (int i = 0; i < num.Length; i++)
+            {
+                sum += num[i];
+            }
+            return sum;
+        }
+
+        static string Reverse(string text)
+        {
+            char[] cArray = text.ToCharArray();
+            string reverse = " ";
+            for (int i = cArray.Length - 1; i > -1; i--)
+            {
+                reverse += cArray[i];
+            }
+            return reverse;
+        }
+
+        static bool IsHumanLike(int age)
+        {
+            bool status;
+            if (age % 2 == 0)
+            {
+                status = false;
+            }
+            else
+            {
+                status = true;
+            }
+            return status;
+        }
 
         
     }
